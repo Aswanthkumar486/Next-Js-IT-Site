@@ -12,7 +12,8 @@ export default function Home({ hero, services, works, about, heropage, nav, foot
   return (
     <>
       <Navbar nav={nav} />
-      <Hero data={{ homepage: heropage }} />
+      <Hero data={{ heropage }} />
+
       <About about={about} />
       <Works data={works} />
       <Services services={services} />
