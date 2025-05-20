@@ -1,13 +1,13 @@
 {
   "nav": {
-    "logo": "/images/logo1.png",
+    "logo": "/Next-Js-IT-Site/images/logo1.png",
     "nav-list": ["Home", "About", "Services", "Contact"]
   },
   "hero": {
     "title": "Innovative IT Solutions",
     "subtitle": "Digital Transformation for Your Business",
     "ctaText": "Explore Services",
-    "image": "/images/meeting.jpeg"
+    "image": "/Next-Js-IT-Site/images/meeting.jpeg"
   },
   "services": {
     "title": "Our Services",
@@ -16,35 +16,35 @@
         "id": 1,
         "title": "Web Development",
         "description": "Custom web applications tailored to your business needs.",
-        "icon": "/images/code-slash.256x238.png"
+        "icon": "/Next-Js-IT-Site/images/code-slash.256x238.png"
       },
       {
         "id": 2,
         "title": "Cloud Solutions",
         "description": "Scalable cloud infrastructure and migration services.",
-        "icon": "/images/google.png"
+        "icon": "/Next-Js-IT-Site/images/google.png"
       },
       {
         "id": 3,
         "title": "Mobile App Development",
         "description": "Cross-platform mobile apps for iOS and Android.",
-        "icon": "/images/phone-stop-steps-app-iphone.209x256.png"
+        "icon": "/Next-Js-IT-Site/images/phone-stop-steps-app-iphone.209x256.png"
       }
     ]
   },
   "about": {
     "title": "About Us",
     "content": "TechNova Solutions has been a leader in delivering innovative IT services since 2012. With over 20 years of combined expertise, we specialize in empowering businesses worldwide to achieve digital transformation through cutting-edge technology solutions.\nOur team of 150+ certified professionals excels in custom software development, cloud infrastructure & migration, AI & machine learning, and cybersecurity. As a proud Microsoft Gold Partner and AWS Consulting Partner, we ensure enterprise-grade quality and compliance for all our clients.\nWe are committed to delivering scalable, secure, and tailored IT solutions that drive business growth and operational excellence. With a 95% client retention rate and 24/7 technical support, TechNova is your trusted partner in navigating the future of technology.",
-    "image": "/images/environment.jpeg"
+    "image": "/Next-Js-IT-Site/images/environment.jpeg"
   },
   "heropage": {
     "title": "Driving Innovation with Digital Solution",
     "subtitle": "We help businesses thrive in the digital age with smart, scalable technologies",
     "ctaText": "Get Started",
     "carouselImages": [
-      "/images/meeting.jpeg",
-      "/images/download1.jpeg",
-      "/images/downolad2.jpeg"
+      "/Next-Js-IT-Site/images/meeting.jpeg",
+      "/Next-Js-IT-Site/images/download1.jpeg",
+      "/Next-Js-IT-Site/images/downolad2.jpeg"
     ]
   },
   "works": {
@@ -55,7 +55,7 @@
         "id": 1,
         "title": "Enterprise Cloud Migration",
         "description": "Migrated 50+ TB of data for Fortune 500 company to AWS infrastructure with zero downtime",
-        "image": "/images/downolad2.jpeg",
+        "image": "/Next-Js-IT-Site/images/downolad2.jpeg",
         "tech": ["AWS", "Terraform", "Docker", "Kubernetes"],
         "link": "/projects/cloud-migration"
       },
@@ -63,7 +63,7 @@
         "id": 2,
         "title": "Healthcare Mobile App",
         "description": "Developed HIPAA-compliant patient management system for US healthcare provider",
-        "image": "/images/download1.jpeg",
+        "image": "/Next-Js-IT-Site/images/download1.jpeg",
         "tech": ["React Native", "Node.js", "MongoDB", "HL7"],
         "link": "/projects/healthcare-app"
       },
@@ -71,7 +71,7 @@
         "id": 3,
         "title": "AI-Powered Analytics Platform",
         "description": "Built machine learning platform for real-time business analytics",
-        "image": "/images/downolad2.jpeg",
+        "image": "/Next-Js-IT-Site/images/downolad2.jpeg",
         "tech": ["Python", "TensorFlow", "React", "BigQuery"],
         "link": "/projects/ai-analytics"
       }
@@ -79,7 +79,7 @@
   },
   "footer": {
     "nav": {
-      "logo": "/images/logo1.png",
+      "logo": "/Next-Js-IT-Site/images/logo1.png",
       "links": [
         { "name": "Home", "url": "/" },
         { "name": "About", "url": "/about" },
@@ -91,17 +91,17 @@
       {
         "platform": "Facebook",
         "url": "https://facebook.com/YourPage",
-        "icon": "/images/facebook.png"
+        "icon": "/Next-Js-IT-Site/images/facebook.png"
       },
       {
         "platform": "Twitter",
         "url": "https://twitter.com/YourProfile",
-        "icon": "/images/google.png"
+        "icon": "/Next-Js-IT-Site/images/google.png"
       },
       {
         "platform": "LinkedIn",
         "url": "https://linkedin.com/in/YourProfile",
-        "icon": "/images/linkedin.png"
+        "icon": "/Next-Js-IT-Site/images/linkedin.png"
       }
     ],
     "copyright": "© 2025 TechNova Solutions. All rights reserved."
