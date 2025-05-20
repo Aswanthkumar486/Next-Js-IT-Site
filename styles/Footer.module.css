@@ -1,0 +1,66 @@
+.footer {
+  background: linear-gradient(145deg, #e0dddd, #2d2d2d);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navLink {
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #0d6efd !important;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(196, 31, 31, 0.1);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: #0d6efd;
+  transform: translateY(-3px);
+}
+
+.backToTop {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.backToTop:hover {
+  background: #0d6efd;
+  border-color: #0d6efd;
+}

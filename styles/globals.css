@@ -1,0 +1,180 @@
+/* Base Transition Settings */
+* {
+  transition: all 0.3s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography Enhancements */
+body {
+  color: #2d3748;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1a365d;
+  transition: color 0.3s ease;
+}
+
+/* Navigation Enhancements */
+.custom-navbar {
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+/* Remove fixed positioning from navbar */
+.custom-navbar {
+  position: static !important; /* Changed from fixed-top */
+}
+
+/* Adjust scroll margin for sections */
+section {
+  scroll-margin-top: 20px; /* Reduced from 80px */
+}
+
+/* Keep other existing styles... */
+
+.nav-link {
+  color: #4a5568 !important;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4299e1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Hero Section Animation */
+.hero-section {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Service Cards Hover Effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  border: none !important;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Project Image Hover Effect */
+.card-img-top {
+  transition: transform 0.5s ease !important;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Form Interactions */
+.form-control {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.form-control:focus {
+  border-color: #4299e1 !important;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.25) !important;
+}
+
+.btn-primary {
+  background: #4299e1 !important;
+  border: none !important;
+  transition: transform 0.3s ease, opacity 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Footer Enhancements */
+.footer {
+  background: #2d3748 !important;
+  color: #cbd5e0 !important;
+}
+
+.footer a {
+  color: #cbd5e0 !important;
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease !important;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* Back to Top Button Animation */
+.backToTop {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Content Fade Animation */
+.animate-content {
+  animation: slideFade 0.8s ease-out;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+}
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section positioning */
+section {
+  scroll-margin-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Active link styling */
+.nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 500;
+}
