@@ -1,13 +1,12 @@
-// components/Hero.js
 import React from 'react';
 import Image from 'next/image';
 
 export default function Hero({ data }) {
-  if (!data || !data.homepage) {
+  if (!data || !data.heropage) {
     return <div>Loading hero section...</div>;
   }
 
-  const { title, subtitle, ctaText, carouselImages } = data.homepage;
+  const { title, subtitle, ctaText, carouselImages } = data.heropage;
 
   return (
     <section id="home" className="hero-section py-5 bg-light">
@@ -26,15 +25,15 @@ export default function Hero({ data }) {
               {carouselImages.map((img, index) => (
                 <div
                   key={index}
-                  className={carousel-item${index === 0 ? ' active' : ''}}
+                  className={`carousel-item${index === 0 ? ' active' : ''}`}
                 >
                   <Image
                     src={img}
-                    alt={Slide ${index + 1}}
+                    alt={`Slide ${index + 1}`}
                     width={800}
                     height={400}
-                    className="d-block rounded shadow"
-                    style={{ width: '100%', height: 'auto' }}
+                    className="d-block w-100 rounded shadow"
+                    style={{ height: 'auto' }}
                   />
                 </div>
               ))}
@@ -46,7 +45,10 @@ export default function Hero({ data }) {
               data-bs-target="#heroCarousel"
               data-bs-slide="prev"
             >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              />
               <span className="visually-hidden">Previous</span>
             </button>
 
@@ -56,7 +58,10 @@ export default function Hero({ data }) {
               data-bs-target="#heroCarousel"
               data-bs-slide="next"
             >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              />
               <span className="visually-hidden">Next</span>
             </button>
 
@@ -69,7 +74,7 @@ export default function Hero({ data }) {
                   data-bs-slide-to={idx}
                   className={idx === 0 ? 'active' : ''}
                   aria-current={idx === 0 ? 'true' : 'false'}
-                  aria-label={Slide ${idx + 1}}
+                  aria-label={`Slide ${idx + 1}`}
                 />
               ))}
             </div>
@@ -79,5 +84,3 @@ export default function Hero({ data }) {
     </section>
   );
 }
-  
-  
